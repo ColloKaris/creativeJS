@@ -36,3 +36,5 @@ function addTodo(event) {
   //Clear Todo INPUT Value
   todoInput.value = '';
 }
+
+//wasn't able to do much today but will improve tommorrow
