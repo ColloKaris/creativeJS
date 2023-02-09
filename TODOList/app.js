@@ -38,3 +38,5 @@ function addTodo(event) {
 }
 
 //wasn't able to do much today but will improve tommorrow
+//Didn't code today too, but i made arrangements to resume my
+///coding routine. tomorrow we go hard
