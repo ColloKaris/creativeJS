@@ -5,6 +5,7 @@ const todoList = document.querySelector(".todo-list");
 
 //Event Listeners
 todoButton.addEventListener("click", addTodo);
+todoList.addEventListener('click', deleteCheck);
 
 //Functions
 function addTodo(event) {
@@ -37,6 +38,17 @@ function addTodo(event) {
   todoInput.value = '';
 }
 
-//wasn't able to do much today but will improve tommorrow
-//Didn't code today too, but i made arrangements to resume my
-///coding routine. tomorrow we go hard
+function deleteCheck(e){
+  const item = e.target;
+  //DELETE TODO
+  if(item.classList[0] === 'trash-btn'){
+    const todo = item.parentElement;
+    todo.remove();
+  }
+  //CHECK MARK
+  if(item.classList[0] === 'complete-btn'){
+    const todo = item.parentElement;
+    todo.classList.toggle('completed');
+  }
+}
+
